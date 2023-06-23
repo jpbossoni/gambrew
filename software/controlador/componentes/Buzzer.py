@@ -16,16 +16,18 @@ class Buzzer():
         GPIO.setup(self.__gpio_pin_bcm, GPIO.OUT)
         GPIO.output(  self.__gpio_pin_bcm, GPIO.LOW)
     
-    async def pulsar(self, repeticao, tempo):
+    async def pulsar(self, repeticao, duracao, intervalo):
         """
-        :
+        :param repeticao: um inteiro com a quantidade de vezes que o sinal sonoro será emitido
+        :param duracao: um inteiro com a duração em milisegundos da do sinal sonoro
+        :param intervalo: um inteiro com a duração em milisegundos do intervalo (pausa) entre os sinais sonoros
         """
         for p in range(0,repeticao):
             print (p)
             GPIO.output(self.__gpio_pin_bcm, GPIO.HIGH)
-            await asyncio.sleep(tempo)
+            await asyncio.sleep(duracao)
             GPIO.output(self.__gpio_pin_bcm, GPIO.LOW)
-            await asyncio.sleep(tempo)
+            await asyncio.sleep(intervalo)
             
         GPIO.output(self.__gpio_pin_bcm, GPIO.LOW)
 
