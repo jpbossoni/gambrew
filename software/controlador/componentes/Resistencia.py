@@ -1,12 +1,12 @@
 import RPi.GPIO as GPIO
 
 class Resistencia():
-            """
-        Broadcom GPIO numbers (BCM)        
-        https://raspi.tv/2013/rpi-gpio-basics-4-setting-up-rpi-gpio-numbering-systems-and-inputs
-
-        :param gpio_pin_bcm: recebe um inteiro que representa o pino no schema BCM
-        """
+    """
+    Broadcom GPIO numbers (BCM)        
+    https://raspi.tv/2013/rpi-gpio-basics-4-setting-up-rpi-gpio-numbering-systems-and-inputs
+    :param gpio_pin_bcm: recebe um inteiro que representa o pino no schema BCM
+    :param potencia: recebe um inteiro que representa a potencia em watts da resistencia
+    """
     def __init__(self, gpio_pin_bcm, potencia):
         self.__gpio_pin_bcm = gpio_pin_bcm
         self.__pct_potencia = 0
