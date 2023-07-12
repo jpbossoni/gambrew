@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import time
 import asyncio
 
+
 class Bomba():
 	def __init__(self, gpio_pin_bcm: int, nome: str):
 		"""
