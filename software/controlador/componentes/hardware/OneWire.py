@@ -3,9 +3,10 @@ from threading import Thread
 # https://pypi.org/project/w1thermsensor/
 import time
 from w1thermsensor import W1ThermSensor, Sensor
+from SensorDeTemperatura import SensorDeTemperatura
 
 
-class SensorTemperatura(Thread):
+class OneWire(Thread, SensorDeTemperatura):
 	"""
 	https://github.com/timofurrer/w1thermsensor
 	"""
@@ -37,6 +38,8 @@ class SensorTemperatura(Thread):
 			except:
 				print("ERRO AO LER O SENSOR DE TEMPERATURA: " + self.__sensor.id)
 
-	@property
-	def temperatura(self):
+ 
+ 
+	def temperatura(self) -> float:
 		return self.__temperatura
+	
