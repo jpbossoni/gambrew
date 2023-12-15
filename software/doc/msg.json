@@ -1,0 +1,28 @@
+{
+    "desligarbomba": {
+        "id": "panela_de_mostura",
+        "comando": {
+            "id": "bomba",
+            "comando": "desligar"
+        }
+    },
+    "ligarbomba": {
+        "id": "panela_de_mostura",
+        "comando": {
+            "id": "bomba",
+            "comando": "desligar"
+        }
+    },
+    
+    "definirpotencia":{
+        "id":"panela_de_fevura.resistencia.definirpotencia",
+        "comando":{
+            "id":"resistencia",
+            "comando":{
+                "id":"definirpotencia",
+                "valor":50
+            }
+        }
+    }
+
+}
