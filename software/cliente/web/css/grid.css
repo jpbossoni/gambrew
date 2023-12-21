@@ -1,0 +1,62 @@
+.pm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .pm-div-display-temperatura { grid-area: 1 / 1 / 4 / 2; }
+    .pm-div-display-tempo { grid-area: 1 / 2 / 4 / 3; }
+    .pm-div-label-temperatura { grid-area: 4 / 1 / 5 / 2; }
+    .pm-div-label-tempo { grid-area: 4 / 2 / 5 / 3; }
+    .pm-div-textfield-temperatura { grid-area: 5 / 1 / 6 / 2; }
+    .pm-div-textfield-tempo { grid-area: 5 / 2 / 6 / 3; }
+    .pm-div-bt-define-rampa { grid-area: 6 / 1 / 7 / 3; }
+    .pm-div-bt-auto { grid-area: 7 / 1 / 8 / 2; }
+    .pm-div-bt-aumento-potencia { grid-area: 7 / 2 / 8 / 3; }
+    .pm-div-bt-resistencia { grid-area: 8 / 1 / 9 / 2; }
+    .pm-div-display-potencia-resistencia { grid-area: 8 / 2 / 9 / 3; }
+    .pm-div-bt-bomba-recirculacao { grid-area: 9 / 1 / 10 / 2; }
+    .pm-div-bt-diminui-potencia { grid-area: 9 / 2 / 10 / 3; }
+    
+    .pa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .pa-div-display-temperatura { grid-area: 1 / 1 / 4 / 3; }
+        .pa-div-label-temperatura  { grid-area: 4 / 1 / 5 / 3; }
+        .pa-div-textfield-temperatura  { grid-area: 5 / 1 / 6 / 3; }
+        .pa-div-bt-define-temperatura { grid-area: 6 / 1 / 7 / 3; }
+        .pa-div-bt-auto { grid-area: 7 / 1 / 8 / 2; }
+        .pa-div-bt-aumento-potencia { grid-area: 7 / 2 / 8 / 3; }
+        .pa-div-bt-resistencia { grid-area: 8 / 1 / 9 / 2; }
+        .pa-div-display-potencia-resistencia { grid-area: 8 / 2 / 9 / 3; }
+        .pa-div-bt-bomba-recirculacao { grid-area: 9 / 1 / 10 / 2; }
+        .pa-div-bt-diminui-potencia { grid-area: 9 / 2 / 10 / 3; } 
+
+
+        .pf {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .pf-div-display-tempo-total { grid-area: 1 / 1 / 4 / 2; }
+            .pf-div-display-tempo-etapa { grid-area: 1 / 2 / 4 / 3; }
+            .pf-div-label-tempo { grid-area: 4 / 1 / 5 / 3; }
+            .pf-div-textfield-tempo { grid-area: 5 / 1 / 6 / 3; }
+            .pf-div-bt-define-inicio-fervura { grid-area: 6 / 1 / 7 / 2; }
+            .pf-div-bt-define-etapa-fervura { grid-area: 6 / 2 / 7 / 3; }
+            .pf-div-bt-resistencia { grid-area: 7 / 1 / 8 / 2; }
+            .pf-div-bt-aumento-potencia { grid-area: 7 / 2 / 8 / 3; }
+            .pf-div-bt-bomba-mosto { grid-area: 8 / 1 / 9 / 2; }
+            .pf-div-display-potencia-resistencia { grid-area: 8 / 2 / 9 / 3; }
+            .pf-div-bt-bomba-agua { grid-area: 9 / 1 / 10 / 2; }
+            .pf-div-bt-diminui-potencia { grid-area: 9 / 2 / 10 / 3; }

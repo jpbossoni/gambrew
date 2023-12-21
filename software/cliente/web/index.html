@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/gambrew.css">
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <ul class="nav nav-pills nav-justified">
+      <li  ><a data-toggle="pill" href="#mostura">Mostura</a></li>
+      <li><a data-toggle="pill" href="#agua">Água</a></li>
+      <li><a data-toggle="pill" href="#fervura">Fervura</a></li>
+      <li><a data-toggle="pill" href="#fermentador">Fermentador</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="geral" class="tab-pane fade in active">
+
+
+      </div>
+      <div id="mostura" class="tab-pane fade">
+        <div class="pm ">
+          <div class="pm-div-display-temperatura display-grande  "> 65,56 oC</div>
+          <div class="pm-div-display-tempo display-grande"> 01:12:45</div>
+          <div class="pm-div-label-temperatura label-grande " > Temperatura da rampa</div>
+          <div class="pm-div-label-tempo label-grande "> Tempo da rampa</div>
+          <div class="pm-div-textfield-temperatura "> <input type="text" id="pm_pmtr" value="00.00" data-bs-toggle="tooltip" data-bs-placement="top" title="Tempo da rampa" /></div>
+          <div class="pm-div-textfield-tempo"> <input type="text" id="pm_pmter" value="00.00" data-bs-toggle="tooltip" data-bs-placement="top" title="Tempo da rampa" /></div>
+          <div class="pm-div-bt-define-rampa"> <button id="pm_definerampa"  class="button">Definir rampa</button></div>
+          <div class="pm-div-bt-auto"> <button id="pm_definerampa"  class="button">Auto</button></div>
+          <div class="pm-div-bt-aumento-potencia"> <button id="pm_definerampa"  class="button">MAIS</button></div>
+          <div class="pm-div-bt-resistencia"><button id="pm_definerampa"  class="button">Resistencia</button> </div>
+          <div class="pm-div-display-potencia-resistencia"> 10%</div>
+          <div class="pm-div-bt-bomba-recirculacao"> <button id="pm_definerampa"  class="button">bomba</button></div>
+          <div class="pm-div-bt-diminui-potencia"> <button id="pm_definerampa"  class="button">Definir rampa</button></div>
+        </div>
+
+      </div>
+      <div id="agua" class="tab-pane fade">
+        <div class="pa">
+          <div class="pa-div-display-temperatura"> 45,550C</div>
+          <div class="pa-div-label-temperatura"> temperatura</div>
+          <div class="pa-div-textfield-temperatura"> temp</div>
+          <div class="pa-div-bt-define-temperatura"> digite a temperatura</div>
+          <div class="pa-div-bt-auto"> auto</div>
+          <div class="pa-div-bt-aumento-potencia"> potencia mais </div>
+          <div class="pa-div-bt-resistencia"> Resistencia</div>
+          <div class="pa-div-display-potencia-resistencia"> 20%</div>
+          <div class="pa-div-bt-bomba-recirculacao"> Bomba</div>
+          <div class="pa-div-bt-diminui-potencia">menos </div>
+          </div>
+      </div>
+      <div id="fervura" class="tab-pane fade">
+        <div class="pf">
+          <div class="pf-div-display-tempo-total"> t t</div>
+          <div class="pf-div-display-tempo-etapa"> tr </div>
+          <div class="pf-div-label-tempo"> label</div>
+          <div class="pf-div-textfield-tempo"> digite aqui</div>
+          <div class="pf-div-bt-define-inicio-fervura">inicio da fervura </div>
+          <div class="pf-div-bt-define-etapa-fervura"> Rampa</div>
+          <div class="pf-div-bt-bomba-resistencia"> Resistencia</div>
+          <div class="pf-div-bt-aumento-potencia"> Potencia mais</div>
+          <div class="pf-div-bt-bomba-mosto"> bomba mosto</div>
+          <div class="pf-div-display-potencia-resistencia"> Potencia 0%</div>
+          <div class="pf-div-bt-bomba-agua"> Bomba agua</div>
+          <div class="pf-div-bt-diminui-potencia">potencia menos </div>
+          </div>
+      </div>
+      <div id="fermentador" class="tab-pane fade">
+
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

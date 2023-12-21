@@ -1,0 +1,60 @@
+html,
+body {
+    margin: 0;
+    font-family: Arial;
+    height: 95%;
+}
+
+
+.nav>li.active>a {
+  color: #eeeeee;
+  background-color: blue;
+  font-size: 60px;
+
+}
+
+.nav>li>a {
+  color: #0a0a0a;
+  font-size: 40px;
+}
+
+.display-grande {
+  width: 100%;
+  font-size: 60px;
+  height: 80px;
+  border: none;
+  color: black;
+  text-align: center;
+}
+
+.label-grande {
+  width: 100%;
+  font-size: 20px;
+  height: 20px;
+  border: none;
+  color: black;
+  text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  height: 80%;
+}
+
+
+button {
+  font-size: 2rem;
+  width: 100%;
+
+}
+
+.button {
+  font-size: 2rem;
+  
+  width: 100%;
+  height: 100%;
+}
