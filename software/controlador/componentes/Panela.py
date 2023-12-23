@@ -10,4 +10,4 @@ class Panela(Thread):
     
     def definir_rampa(self, temperatura: float, tempo: int):
         self._rampa = Rampa(temperatura, tempo)
-        self.__controlador_temperatura.
+        self.__controlador_temperatura.definir_rampa(self._rampa)

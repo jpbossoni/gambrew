@@ -36,7 +36,7 @@ class ControladorTemperatura(Thread):
 		pass
 
 	def __controle_temperatura_manual(self):
-		pass
+		if self.__sensor_de_temperatura.temperatura < 
 
 	def __log(self):
 		pass
